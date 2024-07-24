@@ -11,7 +11,7 @@ function RecipeDetails() {
   const navigate = useNavigate();
 
   const fetchRecipeDetails = () => {
-    fetch(`http://localhost/react/recipe-app/src/components/read.php?id=${id}`)
+    fetch(`http://localhost/react/src/components/read.php?id=${id}`)
       .then((response) => response.json())
       .then((data) => {
         setRecipe(data);
@@ -49,7 +49,7 @@ function RecipeDetails() {
   };
 
   const handleAddComment = () => {
-    fetch(`http://localhost/react/recipe-app/src/components/update.php`, {
+    fetch(`http://localhost/react/src/components/update.php`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

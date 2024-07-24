@@ -13,7 +13,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost/react/recipe-app/src/components/login.php",
+        "http://localhost/react/src/components/login.php",
         {
           username,
           password,

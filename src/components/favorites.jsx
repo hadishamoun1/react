@@ -15,7 +15,7 @@ function Favorites() {
 
     // Fetch user's favorite recipes
     fetch(
-      `http://localhost/react/recipe-app/src/components/favorites-api/get_favorites.php?user_id=${userId}`
+      `http://localhost/react/src/components/favorites-api/get_favorites.php?user_id=${userId}`
     )
       .then((response) => response.json())
       .then((data) => {

@@ -17,7 +17,7 @@ function CreateRecipe() {
 
     try {
       const response = await fetch(
-        "http://localhost/react/recipe-app/src/components/create.php",
+        "http://localhost/react/src/components/create.php",
         {
           method: "POST",
           headers: {
