@@ -10,7 +10,7 @@ function Cards() {
 
   useEffect(() => {
     // Fetch recipes
-    fetch("http://localhost/react/recipe-app/src/components/read.php")
+    fetch("http://localhost/react/src/components/read.php")
       .then((response) => response.json())
       .then((data) => setRecipes(data))
       .catch((error) => console.error("Error fetching data:", error));
@@ -19,7 +19,7 @@ function Cards() {
     const userId = sessionStorage.getItem("user_id");
     if (userId) {
       fetch(
-        `http://localhost/react/recipe-app/src/components/favorites-api/get_favorites.php?user_id=${userId}`
+        `http://localhost/react/src/components/favorites-api/get_favorites.php?user_id=${userId}`
       )
         .then((response) => response.json())
         .then((data) => {
@@ -41,8 +41,8 @@ function Cards() {
     }
 
     const url = favorites[recipeId]
-      ? `http://localhost/react/recipe-app/src/components/favorites-api/remove_favorite.php`
-      : `http://localhost/react/recipe-app/src/components/favorites-api/add_favorite.php`;
+      ? `http://localhost/react/src/components/favorites-api/remove_favorite.php`
+      : `http://localhost/react/src/components/favorites-api/add_favorite.php`;
 
     fetch(url, {
       method: "POST",
