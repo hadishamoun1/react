@@ -1,0 +1,40 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #007bff;
+  color: aliceblue;
+  width: 100vw;
+  height: 60px;
+}
+.my-recipe-txt {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.create-recipe-btn {
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #007bff;
+  border: none;
+  color: white;
+}
+
+.btn-pos {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 10px;
+}
+.nav-txt {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 100px;
+}

@@ -1,0 +1,14 @@
+body {
+  height: 100vh;
+}
+
+.pos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.nav-pos {
+  display: flex;
+  flex-direction: row;
+}

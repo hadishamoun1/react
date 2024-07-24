@@ -1,0 +1,45 @@
+/* favorites.css */
+.favorites-container {
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.favorite-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-bottom: 15px;
+  transition: box-shadow 0.3s ease;
+}
+
+.favorite-item:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.favorite-item p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.favorite-item button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.favorite-item button:hover {
+  background-color: #0056b3;
+}
+.btn-view {
+  max-width: 300px;
+}

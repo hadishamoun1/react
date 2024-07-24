@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 200px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add this line */
+  justify-content: space-between;
+}
+
+.view-recipe-btn {
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+}
+
+.view-recipe-btn-container {
+  display: flex;
+  justify-content: center;
+}
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(220px, 1fr));
+  column-gap: 100px;
+  row-gap: 80px;
+  justify-items: center;
+  align-items: flex-start;
+  height: 50%;
+  width: 100%;
+}
+
+.share-recipe-btn {
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  margin-left: 10px;
+}
